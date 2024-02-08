@@ -1,32 +1,88 @@
 <footer class="main-footer">
   <div class="main-container">
     <div class="main-footer__wrapper">
-      <a class="main-footer__logo-text-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer">
-        <img class="main-footer__logo-text-image" src="images/icons/logo-mobile-text.svg" width="128" height="24"
-          alt="Текст логотипа подвала" />
+      <a class="main-footer__logo-link" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer">
+        <picture>
+          <source media="(min-width:1440px)" srcset="images/logo-desktop@1x.webp 1x, images/logo-desktop@2x.webp 2x"
+            width="234" height="50" type="image/webp">
+          <source srcset="images/logo-mobile@1x.webp 1x, images/logo-mobile@2x.webp 2x" type="image/webp">
+          <source media="(min-width:1440px)" srcset="images/logo-desktop@1x.png 1x, images/logo-desktop@2x.png 2x"
+            width="234" height="50" type="image/png">
+          <img class="main-footer__logo-image" src="images/logo-mobile@1x.png"
+            srcset="images/logo-mobile@1x.png 1x, images/logo-mobile@2x.png 2x" width="268" height="58"
+            alt="Логотип подвала">
+        </picture>
       </a>
-      <ul class="main-footer__social">
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--vk" href="https://vk.com/htmlacademy" rel="noreferrer">
-            <span class="visually-hidden">HTML Академия Вконтакте</span>
+      <button class="main-footer__button main-button" type="button">
+        <span class="main-button__arrow main-button__arrow--arrow">Вызвать замерщика</span>
+      </button>
+      <ul class="main-footer__mav-1">
+        <li class="main-footer__nav-1-item">
+          <h3 class="main-footer__nav-1-title">Матовые</h3>
+        </li>
+        <li class="main-footer__nav-1-item">
+          <a class="main-footer__nav-1-link" href="https://vk.com/htmlacademy" rel="noreferrer">
+            Матовые
           </a>
         </li>
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--youtube"
-            href="https://www.youtube.com/user/htmlacademyru">
-            <span class="visually-hidden">HTML Академия на Ютуб</span>
+        <li class="main-footer__nav-1-item">
+          <a class="main-footer__nav-1-link" href="https://vk.com/htmlacademy" rel="noreferrer">
+            Глянцевые
           </a>
         </li>
-        <li class="main-footer__social-item">
-          <a class="main-footer__social-link main-footer__social-link--telegram" href="https://t.me/htmlacademy" rel="noreferrer">
-            <span class="visually-hidden">HTML Академия в Телеграм</span>
+        <li class="main-footer__nav-1-item">
+          <a class="main-footer__nav-1-link" href="https://vk.com/htmlacademy" rel="noreferrer">
+            Сатиновые
+          </a>
+        </li>
+        <li class="main-footer__nav-1-item">
+          <a class="main-footer__nav-1-link" href="https://vk.com/htmlacademy" rel="noreferrer">
+            Фактурные
           </a>
         </li>
       </ul>
-      <a class="main-footer__logo-academy" href="https://htmlacademy.ru/intensive/adaptive" rel="noreferrer">
-        <span class="main-footer__text-energy">HTML Academy</span>
-        <svg class="main-footer__text-svg" width="27" height="34"></svg>
-      </a>
+      <ul class="main-footer__mav-2">
+        <li class="main-footer__nav-2-item">
+          <h3 class="main-footer__nav-2-title">Тканевые</h3>
+        </li>
+        <li class="main-footer__nav-2-item">
+          <a class="main-footer__nav-2-link" href="https://vk.com/htmlacademy" rel="noreferrer">
+            Тканевые
+          </a>
+        </li>
+        <li class="main-footer__nav-2-item">
+          <a class="main-footer__nav-2-link" href="https://vk.com/htmlacademy" rel="noreferrer">
+            D-Premium
+          </a>
+        </li>
+        <li class="main-footer__nav-2-item">
+          <a class="main-footer__nav-2-link" href="https://vk.com/htmlacademy" rel="noreferrer">
+            Clipso
+          </a>
+        </li>
+        <li class="main-footer__nav-2-item">
+          <a class="main-footer__nav-2-link" href="https://vk.com/htmlacademy" rel="noreferrer">
+            Cerutti
+          </a>
+        </li>
+      </ul>
+      <div class="main-footer__contacts-wrapper">
+        <h3 class="main-footer__contacts-title">Контакты</h3>
+        <a class="main-footer__contacts-phone" href="tel:84993978881">8 (499) 397-88-81</a>
+        <p class="main-footer__contacts-address">Московская обл., Новорижское шоссе, 26-й километр, с.17 ТЦ "Петровский строительный двор", павильон Д-12</p>
+        <a class="main-footer__contacts-mail" href="mail:Info@mopsdesign.ru">Info@mopsdesign.ru</a>
+        <ul class="main-footer__social-list">
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--tiktok" href="#"></a>
+          </li>
+          <li class="main-footer__social-item">
+            <a class="main-footer__social-link main-footer__social-link--inst" href="#"></a>
+          </li>
+        </ul>
+      </div>
+      <p class="main-footer__copy">© 2009-2023. ООО «РумЭксперт» - Установка натяжных потолков в Москве
+        и области. Сайт rumexpert.ru не является публичной офертой и носит информационный характер
+        Карта сайта</p>
     </div>
   </div>
 </footer>

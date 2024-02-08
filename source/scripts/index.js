@@ -3,7 +3,7 @@
 // Burger Menu
 
 const BurgerHeader = document.querySelector('.page-header__toggle');
-const HeaderMenu = document.querySelector('.suite-list');
+const HeaderMenu = document.querySelector('.page-header__mobile-menu');
 
 if (BurgerHeader) {
   BurgerHeader.addEventListener('click', () => {
