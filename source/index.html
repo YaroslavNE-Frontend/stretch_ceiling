@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Mops Design - Главная</title>
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicons/icon.svg" sizes="any" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="favicons/apple.png" sizes="180x180" type="image/png" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" defer></script>
+  <script src="scripts/index.js" defer></script>
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="main-container">
+      <nav class="page-header__nav">
+        <div class="page-header__burger">
+          <button class="page-header__toggle page-header__toggle--close" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+          <span class="page-header__burger-text">Меню</span>
+        </div>
+        <a class="page-header__logo logo" href="index.html" aria-current="page">
+          <h3 class="visually-hidden">Mops Design - натяжные потолки</h3>
+          <picture>
+            <source media="(min-width:1440px)" srcset="images/logo-desktop@1x.webp 1x, images/logo-desktop@2x.webp 2x"
+              width="234" height="50" type="image/webp">
+            <source srcset="images/logo-mobile@1x.webp 1x, images/logo-mobile@2x.webp 2x" type="image/webp">
+            <source media="(min-width:1440px)" srcset="images/logo-desktop@1x.png 1x, images/logo-desktop@2x.png 2x"
+              width="234" height="50" type="image/png">
+            <img class="logo-image" src="images/logo-mobile@1x.png"
+              srcset="images/logo-mobile@1x.png 1x, images/logo-mobile@2x.png 2x" width="140" height="30"
+              alt="Логотип Шапки">
+          </picture>
+        </a>
+        <div class="page-header-social">
+          <ul class="page-header-social__list">
+            <li class="page-header-social__item">
+              <a class="page-header-social__link page-header-social__link--phone" href="tel:89145281417">
+                <span class="visually-hidden">Позвонить компании</span>
+              </a>
+            </li>
+            <li class="page-header-social__item">
+              <a class="page-header-social__link page-header-social__link--whatsapp" href="https://web.whatsapp.com">
+                <span class="visually-hidden">Мы в WhatsApp</span>
+              </a>
+            </li>
+            <li class="page-header-social__item">
+              <a class="page-header-social__link page-header-social__link--tm"
+                href="https://t.me/makety_saitov_figma/188">
+                <span class="visually-hidden">Мы в Телеграмм</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <div class="page-header__mobile-menu">
+      <div class="main-container">
+        <h3 class="page-header__mobile-menu-title">Основные разделы</h3>
+        <span class="page-header__mobile-menu-location">
+          <p class="page-header__mobile-menu-text page-header__mobile-menu-text--map">Ваш город: Москва</p>
+        </span>
+        <ul class="page-header__list">
+          <li class="page-header__item">
+            <a class="page-header__link" href="#">Услуги</a>
+          </li>
+          <ul class="page-header__submenu-list">
+            <li class="page-header__submenu-item">
+              <a class="page-header__submenu-link" href="#">Услуги</a>
+            </li>
+          </ul>
+          <li class="page-header__submenu-item">
+            <a class="page-header__submenu-link" href="#">Акции</a>
+          </li>
+          <li class="page-header__submenu-item">
+            <a class="page-header__submenu-link" href="#">Аксессуары</a>
+          </li>
+          <li class="page-header__submenu-item">
+            <a class="page-header__submenu-link" href="#">Отзывы</a>
+          </li>
+          <li class="page-header__submenu-item">
+            <a class="page-header__submenu-link" href="#">О компании</a>
+          </li>
+          <li class="page-header__submenu-item">
+            <a class="page-header__submenu-link" href="#">Контакты</a>
+          </li>
+        </ul>
+        <button class="page-header__calc-wrapper" type="button">
+          <span class="page-header__calc page-header__calc--icon">Калькулятор</span>
+        </button>
+        <div class="page-header__feedback">
+          <a class="page-header__feedback-link" href="#">Задать вопрос</a>
+          <a class="page-header__feedback-tm page-header__feedback-tm--tm" href="https://t.me/makety_saitov_figma/188">Telegram</a>
+          <a class="page-header__feedback-whatsapp page-header__feedback-link--whatsapp" href="https://web.whatsapp.com">WhatsApp</a>
+        </div>
+        <div class="page-header__relations">
+          <a class="page-header__relations-phone" href="tel:84993978881">8 (499) 397-88-81</a>
+          <p class="page-header__relations-job">Время работы: Пн-Вс <time
+              class="page-header__relations-jobtime">09:00-19:00</time>.</p>
+        </div>
+        <button class="page-header__calc-wrapper" type="button">
+          <span class="page-header__calc page-header__calc--icon">Калькулятор</span>
+        </button>
+        <button class="page-header__button main-button" type="button">
+          <span class="main-button__arrow main-button__arrow--arrow">Вызвать замерщика</span>
+        </button>
+      </div>
+    </div>
+  </header>
+  <main>
+    <h1 class="visually-hidden">Cat Energy</h1>
+  </main>
+  <!-- @@include('html/@footer.html') -->
+</body>
+
+</html>

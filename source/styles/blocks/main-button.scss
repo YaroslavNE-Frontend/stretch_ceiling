@@ -1,0 +1,43 @@
+.main-button {
+  margin-bottom: 20px;
+  padding: 15px 11px 15px 11px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  border: none;
+  background-color: #cf0953;
+  color: #ffffff;
+  font-family: $main-manrope;
+  font-size: 13px;
+  font-weight: $fw-regular;
+  line-height: 18px;
+
+}
+
+.main-button__arrow {
+  max-width: calc(100% - 100px);
+  position: relative;
+  color: #ffffff;
+  font-family: $main-manrope;
+  font-size: 13px;
+  font-weight: $fw-regular;
+  line-height: 18px;
+  text-align: center;
+
+  &--arrow {
+    &::after {
+      position: absolute;
+      content: "";
+      top: 50%;
+      right: -40px;
+      transform: translate(-50%, -50%);
+      mask-image: url("../../images/icons/stack.svg#right-arrow");
+      background-color: #ffffff;
+      transition: all 0.3s ease-in-out;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}
