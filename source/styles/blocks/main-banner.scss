@@ -4,6 +4,7 @@
   position: relative;
   padding-top: 28px;
   padding-bottom: 25px;
+
   &--bg {
     background-size: 375px 414px;
     background-image: url("../../images/banner-bg-mobile@1x.jpg");
@@ -54,7 +55,6 @@
 }
 
 .main-banner__card {
-  padding-bottom: 15px;
   width: 100%;
   background-image: url('../../images/card-bg@1x.png');
   background-position: center center;
@@ -143,14 +143,20 @@
 }
 
 .main-banner__card-desc {
+  margin-bottom: 0;
   font-weight: $fw-regular;
   font-size: 10px;
   color: #f7f7f9;
   text-align: center;
+  padding-bottom: 15px;
 }
 
 .main-banner__advantages-list {
   @include list-reset;
+  padding: 10px 10px 0;
+
+  // border-left: 1px solid #E5EAF3;
+  // border-right: 1px solid #E5EAF3;
 }
 
 .main-banner__advantages-item {
@@ -158,6 +164,9 @@
   flex-basis: 206px;
   padding-left: 55px;
   min-height: 40px;
+  // border-left: 1px solid #A9ADB5;
+  // border-right: 1px solid #A9ADB5;
+  border-bottom: 1px solid #E5EAF3;
 
   &--wheel {
     &::after {

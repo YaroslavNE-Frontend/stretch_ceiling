@@ -1,3 +1,7 @@
+/* Vendor */
+
+@import "../vendor/swiper/swiper-bundle.min.css";
+
 /* GLOBAL */
 @import "./global/visually-hidden";
 @import "./global/mixins";
@@ -8,16 +12,9 @@
 /* BLOCKS */
 @import "./blocks/main-container.scss";
 @import "./blocks/main-button";
-// @import "./blocks/secondary-title.scss";
 @import "./blocks/logo";
 @import "./blocks/page-header";
-// @import "./blocks/suite-list";
-// @import "./blocks/main-location";
 @import "./blocks/main-banner";
-// @import "./blocks/main-services";
-// @import "./blocks/main-advantages";
-// @import "./blocks/living-example";
-// @import "./blocks/product-card";
-// @import "./blocks/additional-products";
-// @import "./blocks/program-filter";
+@import "./blocks/conditions.scss";
+@import "./blocks/suspended-ceilings.scss";
 @import "./blocks/main-footer";

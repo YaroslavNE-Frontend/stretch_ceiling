@@ -61,3 +61,24 @@ const init = () => {
 };
 
 YandexMap.ready(init);
+
+// Slider
+
+const swiper = new Swiper(".slider-conditions", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 15,
+  navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+  },
+  pagination: {
+      el: ".swiper-pagination",
+  },
+});
+
+const mySwiper = new Swiper(".ceilings", {
+  loop: true,
+  slidesPerView: "auto",
+  spaceBetween: 30,
+});

@@ -10,33 +10,37 @@
   <link rel="manifest" href="manifest.webmanifest" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <link rel="stylesheet" href="styles/styles.css" />
+  <script src="vendor/swiper/swiper-bundle.min.js" defer></script>
   <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_API_KEY&lang=ru_RU" defer></script>
   <script src="scripts/index.js" defer></script>
 </head>
 
 <body>
-    @@include('html/@header.html')
-    <main>
-      <h1 class="visually-hidden">Mops Design</h1>
-      <section class="main-banner">
-          <div class="main-banner__content main-banner__content--bg">
-            <div class="main-container">
-            <h2 class="main-banner__content-title">Натяжные потолки в Москве <span class="main-banner__content-title-span">под ключ</span></h2>
-            <p class="main-banner__content-text">Натяжные потолки любых видов и сложности.
-              Поможем с выбором идеального варианта!
-              Качественные материалы. Опытные мастера!</p>
-            <a class="main-banner__content-button main-button" href="catalog.html">
-              <span class="main-button__arrow main-button__arrow--arrow">Каталог потоков</span>
-            </a>
-          </div>
+  @@include('html/@header.html')
+  <main>
+    <h1 class="visually-hidden">Mops Design</h1>
+    <section class="main-banner">
+      <div class="main-banner__content main-banner__content--bg">
+        <div class="main-container">
+          <h2 class="main-banner__content-title">Натяжные потолки в Москве <span
+              class="main-banner__content-title-span">под ключ</span></h2>
+          <p class="main-banner__content-text">Натяжные потолки любых видов и сложности.
+            Поможем с выбором идеального варианта!
+            Качественные материалы. Опытные мастера!</p>
+          <a class="main-banner__content-button main-button" href="catalog.html">
+            <span class="main-button__arrow main-button__arrow--arrow">Каталог потоков</span>
+          </a>
         </div>
-          <div class="main-banner__card">
-            <div class="main-container">
-            <h3 class="main-banner__card-title">Оставьте заявку и получите 10% скидку</h3>
-            <p class="main-banner__card-input-text">Укажите площадь, м2</p>
-            <form class="main-banner__card-form" action="#" method="post">
-            <input class="main-banner__input-phone" type="text" id="main-banner__input-phone" name="Площадь" placeholder="25">
-            <input class="main-banner__input-square" type="number" id="main-banner__input-square" name="Телефон заказчика" placeholder="+7 (___) ___-___-___">
+      </div>
+      <div class="main-banner__card">
+        <div class="main-container">
+          <h3 class="main-banner__card-title">Оставьте заявку и получите 10% скидку</h3>
+          <p class="main-banner__card-input-text">Укажите площадь, м2</p>
+          <form class="main-banner__card-form" action="#" method="post">
+            <input class="main-banner__input-phone" type="text" id="main-banner__input-phone" name="Площадь"
+              placeholder="25">
+            <input class="main-banner__input-square" type="number" id="main-banner__input-square"
+              name="Телефон заказчика" placeholder="+7 (___) ___-___-___">
             <div class="main-banner__price-wrapper">
               <span class="main-banner__price-text">Примерная стоимость</span>
               <span class="main-banner__price-sum">11250 руб.</span>
@@ -47,31 +51,261 @@
             <p class="main-banner__card-desc">Отправляя данные формы вы даете свое согласие на обработку
               персональных данны</p>
           </form>
+        </div>
+      </div>
+      <div class="main-container">
+          <ul class="main-banner__advantages-list">
+            <li class="main-banner__advantages-item main-banner__advantages-item--wheel">
+              <p class="main-banner__advantages-text">Бесплатный выезд<br>замерщика</p>
+            </li>
+            <li class="main-banner__advantages-item main-banner__advantages-item--wheel">
+              <p class="main-banner__advantages-text">Бесплатный выезд<br>замерщика</p>
+            </li>
+            <li class="main-banner__advantages-item main-banner__advantages-item--clock">
+              <p class="main-banner__advantages-text">Изготовление за 1 день,<br>установка за 2 часа</p>
+            </li>
+            <li class="main-banner__advantages-item main-banner__advantages-item--achievements">
+              <p class="main-banner__advantages-text">10 лет гарантия<br>на материалы</p>
+            </li>
+          </ul>
+      </div>
+    </section>
+    <section class="conditions">
+      <div class="main-container">
+        <div class="conditions__wrapper">
+          <div class="slider-conditions">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="swiper-slide__inner">
+                  <picture>
+                    <source media="(min-width:1440px)"
+                      srcset="images/slider-conditions-desktop@1x.webp 1x, images/slider-conditions-desktop@2x.webp 2x"
+                      width="172" height="196" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="images/slider-conditions-tablet@1x.webp 1x, images/slider-conditions-tablet@2x.webp 2x"
+                      width="168" height="206" type="image/webp">
+                    <source
+                      srcset="images/slider-conditions-mobile@1x.webp 1x, images/slider-conditions-mobile@2x.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width:1440px)"
+                      srcset="images/slider-conditions-desktop@1x.png 1x, images/slider-conditions-desktop@2x.png 2x"
+                      width="163" height="174" type="image/png">
+                    <source media="(min-width: 768px)"
+                      srcset="images/slider-conditions-tablet@1x.png 1x, images/slider-conditions-tablet@2x.png 2x"
+                      width="163" height="174" type="image/png">
+                    <img class="swiper-slide__img" src="images/slider-conditions-mobile@1x.jpg"
+                      srcset="images/slider-conditions-mobile@1x.png 1x, images/slider-conditions-mobile@2x.png 2x"
+                      width="345" height="240" alt="Дом скидка 15%">
+                  </picture>
+                  <div class="swiper-slide__inner-content">
+                    <h4 class="swiper-slide__inner-content__subtitle">Новосёлам скидка</h4>
+                    <h3 class="swiper-slide__inner-content__title">Выгодные условия</h3>
+                    <p class="swiper-slide__inner-content__text">Закажите натяжной потолок с подсветкой
+                      и получите скидку 15% на пвх-полотно</p>
+                    <button class="swiper-slide__inner-content__button main-button" type="button">
+                      <span class="main-button__arrow main-button__arrow--arrow">Вызвать замерщика</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__inner">
+                  <picture>
+                    <source media="(min-width:1440px)"
+                      srcset="images/slider-conditions-desktop@1x.webp 1x, images/slider-conditions-desktop@2x.webp 2x"
+                      width="172" height="196" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="images/slider-conditions-tablet@1x.webp 1x, images/slider-conditions-tablet@2x.webp 2x"
+                      width="168" height="206" type="image/webp">
+                    <source
+                      srcset="images/slider-conditions-mobile@1x.webp 1x, images/slider-conditions-mobile@2x.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width:1440px)"
+                      srcset="images/slider-conditions-desktop@1x.png 1x, images/slider-conditions-desktop@2x.png 2x"
+                      width="163" height="174" type="image/png">
+                    <source media="(min-width: 768px)"
+                      srcset="images/slider-conditions-tablet@1x.png 1x, images/slider-conditions-tablet@2x.png 2x"
+                      width="163" height="174" type="image/png">
+                    <img class="swiper-slide__img" src="images/slider-conditions-mobile@1x.jpg"
+                      srcset="images/slider-conditions-mobile@1x.png 1x, images/slider-conditions-mobile@2x.png 2x"
+                      width="345" height="240" alt="Дом скидка 15%">
+                  </picture>
+                  <div class="swiper-slide__inner-content">
+                    <h4 class="swiper-slide__inner-content__subtitle">Новосёлам скидка</h4>
+                    <h3 class="swiper-slide__inner-content__title">Выгодные условия</h3>
+                    <p class="swiper-slide__inner-content__text">Закажите натяжной потолок с подсветкой
+                      и получите скидку 15% на пвх-полотно</p>
+                    <button class="swiper-slide__inner-content__button main-button" type="button">
+                      <span class="main-button__arrow main-button__arrow--arrow">Вызвать замерщика</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="swiper-slide__inner">
+                  <picture>
+                    <source media="(min-width:1440px)"
+                      srcset="images/slider-conditions-desktop@1x.webp 1x, images/slider-conditions-desktop@2x.webp 2x"
+                      width="172" height="196" type="image/webp">
+                    <source media="(min-width: 768px)"
+                      srcset="images/slider-conditions-tablet@1x.webp 1x, images/slider-conditions-tablet@2x.webp 2x"
+                      width="168" height="206" type="image/webp">
+                    <source
+                      srcset="images/slider-conditions-mobile@1x.webp 1x, images/slider-conditions-mobile@2x.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width:1440px)"
+                      srcset="images/slider-conditions-desktop@1x.png 1x, images/slider-conditions-desktop@2x.png 2x"
+                      width="163" height="174" type="image/png">
+                    <source media="(min-width: 768px)"
+                      srcset="images/slider-conditions-tablet@1x.png 1x, images/slider-conditions-tablet@2x.png 2x"
+                      width="163" height="174" type="image/png">
+                    <img class="swiper-slide__img" src="images/slider-conditions-mobile@1x.jpg"
+                      srcset="images/slider-conditions-mobile@1x.png 1x, images/slider-conditions-mobile@2x.png 2x"
+                      width="345" height="240" alt="Дом скидка 15%">
+                  </picture>
+                  <div class="swiper-slide__inner-content">
+                    <h4 class="swiper-slide__inner-content__subtitle">Новосёлам скидка</h4>
+                    <h3 class="swiper-slide__inner-content__title">Выгодные условия</h3>
+                    <p class="swiper-slide__inner-content__text">Закажите натяжной потолок с подсветкой
+                      и получите скидку 15% на пвх-полотно</p>
+                    <button class="swiper-slide__inner-content__button main-button" type="button">
+                      <span class="main-button__arrow main-button__arrow--arrow">Вызвать замерщика</span>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-buttons">
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
           </div>
         </div>
-        <!-- <picture>
-          <source srcset="images/banner-bg-mobile@1x.webp 1x, images/banner-bg-mobile@2x.webp 2x" type="image/webp">
-          <img class="main-banner__image" src="images/banner-bg-mobile@1x.jpg" srcset="images/banner-bg-mobile@1x.jpg 1x, images/banner-bg-mobile@2x.jpg 2x" width="375" height="414" alt="Фон баннера">
-        </picture> -->
-        <div class="main-container">
-        <ul class="main-banner__advantages-list">
-          <li class="main-banner__advantages-item main-banner__advantages-item--wheel">
-            <p class="main-banner__advantages-text">Бесплатный выезд<br>замерщика</p>
-          </li>
-          <li class="main-banner__advantages-item main-banner__advantages-item--wheel">
-            <p class="main-banner__advantages-text">Бесплатный выезд<br>замерщика</p>
-          </li>
-          <li class="main-banner__advantages-item main-banner__advantages-item--clock">
-            <p class="main-banner__advantages-text">Изготовление за 1 день,<br>установка за 2 часа</p>
-          </li>
-          <li class="main-banner__advantages-item main-banner__advantages-item--achievements">
-            <p class="main-banner__advantages-text">10 лет гарантия<br>на материалы</p>
-          </li>
-        </ul>
+    </section>
+    <section class="suspended-ceilings">
+      <div class="main-container">
+        <h2 class="suspended-ceilings__top-content-title">Каталог натяжных потолков</h2>
+        <p class="suspended-ceilings__top-content-text">Предлагаем потолки, прошедшие сертификацию в Государственном
+          Центре Гигиены и Эпидемиологии, 100% без запаха и вредных вещест</p>
+        <div class="swiper ceilings">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide ceilings-slide">
+              <div class="suspended-ceilings__inner">
+                <div class="suspended-ceilings__picture">
+                  <h3 class="suspended-ceilings__picture-title">Тканевые</h3>
+                  <picture>
+                    <source media="(min-width:1440px)"
+                      srcset="images/suspended-ceilings-img-1-desktop@1x.webp 1x, images/suspended-ceilings-img-1-desktop@2x.webp 2x"
+                      width="172" height="196" type="image/webp">
+                    <source
+                      srcset="images/suspended-ceilings-img-1-mobile@1x.webp 1x, images/suspended-ceilings-img-1-mobile@2x.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width:1440px)"
+                      srcset="images/suspended-ceilings-img-1-desktop@1x.jpg 1x, images/suspended-ceilings-img-1-desktop@2x.jpg 2x"
+                      width="374" height="246" type="image/jpeg">
+                    <img class="suspended-ceilings__picture-img" src="images/suspended-ceilings-img-1-mobile@1x.jpg"
+                      srcset="images/suspended-ceilings-img-1-mobile@1x.jpg 1x, images/suspended-ceilings-img-1-mobile@2x.jpg 2x"
+                      width="280" height="200" alt="потолок">
+                  </picture>
+                </div>
+                <div class="suspended-ceilings__content">
+                  <p class="suspended-ceilings__content-text">Эти уникальные эко потолки могут
+                    быть использованы как по прямому назначению, так и станут отличным решением для декора</p>
+                  <span class="suspended-ceilings__content-price">от 500 p/м2</span>
+                  <button class="suspended-ceilings__content-button main-button" type="button">
+                    <span class="main-button__arrow main-button__arrow--arrow">Вызвать замерщика</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="suspended-ceilings__inner">
+                <div class="suspended-ceilings__picture">
+                  <h3 class="suspended-ceilings__picture-title">Тканевые</h3>
+                  <picture>
+                    <source media="(min-width:1440px)"
+                      srcset="images/suspended-ceilings-img-1-desktop@1x.webp 1x, images/suspended-ceilings-img-1-desktop@2x.webp 2x"
+                      width="172" height="196" type="image/webp">
+                    <source
+                      srcset="images/suspended-ceilings-img-1-mobile@1x.webp 1x, images/suspended-ceilings-img-1-mobile@2x.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width:1440px)"
+                      srcset="images/suspended-ceilings-img-1-desktop@1x.jpg 1x, images/suspended-ceilings-img-1-desktop@2x.jpg 2x"
+                      width="374" height="246" type="image/jpeg">
+                    <img class="suspended-ceilings__picture-img" src="images/suspended-ceilings-img-1-mobile@1x.jpg"
+                      srcset="images/suspended-ceilings-img-1-mobile@1x.jpg 1x, images/suspended-ceilings-img-1-mobile@2x.jpg 2x"
+                      width="280" height="200" alt="потолок">
+                  </picture>
+                </div>
+                <div class="suspended-ceilings__content">
+                  <p class="suspended-ceilings__content-text">Эти уникальные эко потолки могут
+                    быть использованы как по прямому назначению, так и станут отличным решением для декора</p>
+                  <span class="suspended-ceilings__content-price">от 500 p/м2</span>
+                  <button class="suspended-ceilings__content-button main-button" type="button">
+                    <span class="main-button__arrow main-button__arrow--arrow">Вызвать замерщика</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="suspended-ceilings__inner">
+                <div class="suspended-ceilings__picture">
+                  <h3 class="suspended-ceilings__picture-title">Тканевые</h3>
+                  <picture>
+                    <source media="(min-width:1440px)"
+                      srcset="images/suspended-ceilings-img-1-desktop@1x.webp 1x, images/suspended-ceilings-img-1-desktop@2x.webp 2x"
+                      width="172" height="196" type="image/webp">
+                    <source
+                      srcset="images/suspended-ceilings-img-1-mobile@1x.webp 1x, images/suspended-ceilings-img-1-mobile@2x.webp 2x"
+                      type="image/webp">
+                    <source media="(min-width:1440px)"
+                      srcset="images/suspended-ceilings-img-1-desktop@1x.jpg 1x, images/suspended-ceilings-img-1-desktop@2x.jpg 2x"
+                      width="374" height="246" type="image/jpeg">
+                    <img class="suspended-ceilings__picture-img" src="images/suspended-ceilings-img-1-mobile@1x.jpg"
+                      srcset="images/suspended-ceilings-img-1-mobile@1x.jpg 1x, images/suspended-ceilings-img-1-mobile@2x.jpg 2x"
+                      width="280" height="200" alt="потолок">
+                  </picture>
+                </div>
+                <div class="suspended-ceilings__content">
+                  <p class="suspended-ceilings__content-text">Эти уникальные эко потолки могут
+                    быть использованы как по прямому назначению, так и станут отличным решением для декора</p>
+                  <span class="suspended-ceilings__content-price">от 500 p/м2</span>
+                  <button class="suspended-ceilings__content-button main-button" type="button">
+                    <span class="main-button__arrow main-button__arrow--arrow">Вызвать замерщика</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="suspended-ceilings__category-list">
+            <li class="suspended-ceilings__category-item">
+              <a href="#" class="suspended-ceilings__category-link">В гостинную</a>
+            </li>
+            <li class="suspended-ceilings__category-item">
+              <a href="#" class="suspended-ceilings__category-link">В ванную</a>
+            </li>
+            <li class="suspended-ceilings__category-item">
+              <a href="#" class="suspended-ceilings__category-link">В квартиру</a>
+            </li>
+            <li class="suspended-ceilings__category-item">
+              <a href="#" class="suspended-ceilings__category-link">С матовой фактурой</a>
+            </li>
+            <li class="suspended-ceilings__category-item">
+              <a href="#" class="suspended-ceilings__category-link">В гостинную</a>
+            </li>
+            <li class="suspended-ceilings__category-item">
+              <a href="#" class="suspended-ceilings__category-link">В ванную</a>
+            </li>
+            <li class="suspended-ceilings__category-item">
+              <a href="#" class="suspended-ceilings__category-link">Показать</a>
+            </li>
+          </ul>
+        </div>
       </div>
-      </section>
-    </main>
-    @@include('html/@footer.html')
+    </section>
+  </main>
+  @@include('html/@footer.html')
 </body>
 
 </html>

@@ -7,7 +7,6 @@ import htmlmin from 'gulp-htmlmin';
 import * as dartSass from 'sass';
 import gulpSass from 'gulp-sass';
 import fileinclude from 'gulp-file-include';
-import pug from 'gulp-pug';
 import postcss from 'gulp-postcss';
 import postUrl from 'postcss-url';
 import autoprefixer from 'autoprefixer';
