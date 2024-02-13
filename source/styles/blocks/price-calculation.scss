@@ -1,0 +1,158 @@
+.price-calculation {}
+
+.price-calculation__section-title {}
+
+.price-calculation__text {}
+
+.price-calculation__fieldset-room {
+  display: block;
+  padding: 0;
+  border: none;
+}
+
+.price-calculation__fieldset-legend {
+  margin-bottom: 15px;
+  display: inline-block;
+  font-family: $main-manrope;
+  font-weight: $fw-SemiBold;
+  font-size: 15px;
+  text-transform: uppercase;
+  color: #242C3C;
+}
+
+.price-calculation__icon-filter-list {
+  @include list-reset;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 10px;
+  row-gap: 20px;
+}
+
+.price-calculation__icon-filter-item {
+  position: relative;
+  width: 70px;
+  height: auto;
+
+  &--apartment,
+  &--living-room,
+  &--bedroom,
+  &--childrens,
+  &--bathroom,
+  &--toilet,
+  &--corridor,
+  &--other {
+    &::before {
+      position: absolute;
+      content: "";
+      top: 35px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background-color: #A9ADB5;
+      width: 70px;
+      height: 70px;
+      transition: all 0.3s ease-in-out;
+      cursor: pointer;
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 35px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.3s ease-in-out;
+      width: 42px;
+      height: 42px;
+      cursor: pointer;
+    }
+  }
+
+  &:hover::before {
+    background-color: #cf0953;
+  }
+
+  &--apartment {
+    &::after {
+      background-image: url("../../images/icons/stack.svg#price-calculation__icon-1");
+    }
+  }
+
+  &--living-room {
+    &::after {
+      background-image: url("../../images/icons/stack.svg#price-calculation__icon-2");
+    }
+  }
+
+  &--bedroom {
+    &::after {
+      background-image: url("../../images/icons/stack.svg#price-calculation__icon-3");
+    }
+  }
+
+  &--childrens {
+    &::after {
+      background-image: url("../../images/icons/stack.svg#price-calculation__icon-4");
+    }
+  }
+
+  &--bathroom {
+    &::after {
+      background-image: url("../../images/icons/stack.svg#price-calculation__icon-5");
+    }
+  }
+
+  &--toilet {
+    &::after {
+      background-image: url("../../images/icons/stack.svg#price-calculation__icon-6");
+    }
+  }
+
+  &--corridor {
+    &::after {
+      background-image: url("../../images/icons/stack.svg#price-calculation__icon-7");
+    }
+  }
+
+  &--other {
+    &::after {
+      background-image: url("../../images/icons/stack.svg#price-calculation__icon-8");
+    }
+  }
+}
+
+.price-calculation__icon-filter-name {
+  display: block;
+  padding-top: 75px;
+  font-family: $main-manrope;
+  font-weight: $fw-regular;
+  font-size: 13px;
+  text-align: center;
+  color: #242C3C;
+}
+
+.price-calculation__icon-filter-item--living-room {}
+
+.price-calculation__icon-filter-item--bedroom {}
+
+.price-calculation__icon-filter-item--childrens {}
+
+.price-calculation__icon-filter-item--bathroom {}
+
+.price-calculation__icon-filter-item--toilet {}
+
+.price-calculation__icon-filter-item--corridor {}
+
+.price-calculation__icon-filter-item--other {}
+
+.price-calculation__fieldset-lighting {}
+
+.price-calculation__icon-filter-item--lamp {}
+
+.price-calculation__icon-filter-item--chandelier {}
+
+.price-calculation__icon-filter-item--Light-lines {}
+
+.price-calculation__icon-filter-item--led-backlight {}
+
+.price-calculation__icon-filter-item--combination {}
